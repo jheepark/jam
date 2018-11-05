@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'api.blog',
+    'apps.accounts',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -55,7 +57,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, '..', 'react_jam', 'build'),
+            os.path.join(BASE_DIR, '..', 'react_jam_blog', 'build'),
 
         ],
         'APP_DIRS': True,
